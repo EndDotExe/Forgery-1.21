@@ -1,14 +1,11 @@
 package net.end.forgery.util;
 
 import net.end.forgery.item.ModItems;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 
-public class ModModePredicates {
+public class ModModelPredicates {
 
     public static void registerCustomModelPredicates() {
         registerCustomBow(ModItems.ENDER_BOW);

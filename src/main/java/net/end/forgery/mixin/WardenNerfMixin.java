@@ -16,8 +16,8 @@ public class WardenNerfMixin {
     @Inject(method = "addAttributes", at = @At("RETURN"), cancellable = true)
     private static void modifyAttributes(CallbackInfoReturnable<DefaultAttributeContainer.Builder> cir) {
         DefaultAttributeContainer.Builder builder = cir.getReturnValue();
-        builder.add(EntityAttributes.GENERIC_MAX_HEALTH, 180.0);
-        builder.add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 12.0);
+        builder.add(EntityAttributes.GENERIC_MAX_HEALTH, 200.0);
+        builder.add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 15.0);
         builder.add(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 1.0);
         cir.setReturnValue(builder);
     }

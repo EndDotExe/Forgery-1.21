@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:copper_ingot"
+  },
+  "base": {
+    "item": "minecraft:trident"
+  },
+  "result": {
+    "count": 1,
+    "id": "forgery:copper_trident"
+  },
+  "template": {
+    "item": "forgery:smithing_template_gc"
+  }
+}

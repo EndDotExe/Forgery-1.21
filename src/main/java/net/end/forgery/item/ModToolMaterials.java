@@ -11,7 +11,7 @@ import net.minecraft.registry.tag.TagKey;
 
 public enum ModToolMaterials implements ToolMaterial {
     FORGERY_UPGRADED (BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 15000, 20.0F, 5.0F, 0, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
-    FORGERY_INSTATOOL (BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 20000, 1000.0F, 5.0F, 0, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
+    FORGERY_INSTATOOL (BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 25000, 1000.0F, 5.0F, 0, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
     FORGERY_VEINMINER (BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 10000, 25.0F, 5.0F, 0, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private final TagKey<Block> inverseTag;

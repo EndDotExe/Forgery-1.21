@@ -2,6 +2,7 @@ package net.end.forgery.item;
 
 import net.end.forgery.Forgery;
 
+import net.end.forgery.item.custom.EchotridentItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.*;
@@ -24,12 +25,12 @@ public class ModItems {
     public static final Item REDSTONE_EXCAVATOR_PICKAXE = registerItem("redstone_excavator_pickaxe", (new net.minecraft.item.PickaxeItem(ModToolMaterials.FORGERY_INSTATOOL, (new Item.Settings()).rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 1.0F, -2.8F )))));
     public static final Item EMERALD_EXCAVATOR_PICKAXE = registerItem("emerald_excavator_pickaxe", new net.end.forgery.item.custom.FortuneToolItem(ModToolMaterials.FORGERY_UPGRADED, 3, new Item.Settings().rarity(Rarity.EPIC).attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 1.0F, -2.8F))));
     // Swords
-    public static final Item BLIGHTED_BLADE = registerItem("blighted_blade", (new net.end.forgery.item.custom.PoisonSwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 3, -1.5F)))));
-    public static final Item FRIGID_FLAMBERGE = registerItem("frigid_flamberge", (new net.end.forgery.item.custom.SlownessSwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 6, -1.8F)))));
-    public static final Item EDGE_OF_FRAILTY = registerItem("edge_of_frailty", (new net.end.forgery.item.custom.WeaknessSwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 9, -3.0F)))));
+    public static final Item BLIGHTED_BLADE = registerItem("blighted_blade", (new net.end.forgery.item.custom.PoisonSwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 4, -2.5F)))));
+    public static final Item FRIGID_FLAMBERGE = registerItem("frigid_flamberge", (new net.end.forgery.item.custom.SlownessSwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 5, -2F)))));
+    public static final Item EDGE_OF_FRAILTY = registerItem("edge_of_frailty", (new net.end.forgery.item.custom.WeaknessSwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 9, -3.2F)))));
     public static final Item TERRA_BLADE = registerItem("terra_blade", (new net.minecraft.item.SwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 80, -1.8F)))));
     // Tridents
-    public static final Item ECHO_TRIDENT = registerItem("echo_trident", (new TridentItem(new Item.Settings().rarity(Rarity.EPIC).maxDamage(300).attributeModifiers(TridentItem.createAttributeModifiers()).component(DataComponentTypes.TOOL, TridentItem.createToolComponent()))));
+    public static final Item ECHO_TRIDENT = registerItem("echo_trident", (new EchotridentItem(new Item.Settings().rarity(Rarity.EPIC).maxDamage(300).attributeModifiers(TridentItem.createAttributeModifiers()).component(DataComponentTypes.TOOL, TridentItem.createToolComponent()))));
     public static final Item COPPER_TRIDENT = registerItem("copper_trident", (new TridentItem(new Item.Settings().rarity(Rarity.EPIC).maxDamage(300).attributeModifiers(TridentItem.createAttributeModifiers()).component(DataComponentTypes.TOOL, TridentItem.createToolComponent()))));
     // Shields
     public static final Item NETHERITE_SHIELD = registerItem("netherite_shield", (new net.minecraft.item.ShieldItem (new Item.Settings().rarity(Rarity.UNCOMMON))));

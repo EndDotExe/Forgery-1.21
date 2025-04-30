@@ -3,10 +3,15 @@
   "package": "net.end.forgery.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ExampleMixin",
+    "BlockIntRangeMixin",
+    "EnchantmentMixin",
     "WardenNerfMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-	}
+  },
+  "client": [
+    "ItemRendererMixin",
+    "ModelLoaderMixin"
+  ]
 }
