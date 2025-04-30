@@ -18,5 +18,7 @@ public abstract class ModelLoaderMixin {
     @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/model/ModelLoader;loadItemModel(Lnet/minecraft/client/util/ModelIdentifier;)V", ordinal = 1))
     private void onInit(CallbackInfo ci) {
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "edge_of_frailtybig")));
+        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "blighted_bladebig")));
+        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "frigid_flambergebig")));
     }
 }

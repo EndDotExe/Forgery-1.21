@@ -35,7 +35,12 @@ public abstract class ItemRendererMixin {
         if (stack.getItem() == ModItems.EDGE_OF_FRAILTY && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "edge_of_frailty")));
         }
-
+        if (stack.getItem() == ModItems.BLIGHTED_BLADE && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
+            return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "blighted_blade")));
+        }
+        if (stack.getItem() == ModItems.FRIGID_FLAMBERGE && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
+            return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "frigid_flamberge")));
+        }
         return bakedModel;
     }
 
@@ -48,7 +53,12 @@ public abstract class ItemRendererMixin {
         if (stack.getItem() == ModItems.EDGE_OF_FRAILTY) {
             return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "edge_of_frailtybig")));
         }
-
+        if (stack.getItem() == ModItems.BLIGHTED_BLADE) {
+            return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "blighted_bladebig")));
+        }
+        if (stack.getItem() == ModItems.FRIGID_FLAMBERGE) {
+            return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(Forgery.MOD_ID, "frigid_flambergebig")));
+        }
         return bakedModel;
     }
 }
