@@ -3,6 +3,7 @@ package net.end.forgery.item;
 import net.end.forgery.Forgery;
 
 import net.end.forgery.item.custom.EchotridentItem;
+import net.end.forgery.item.custom.LightningtridentItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.*;
@@ -30,8 +31,8 @@ public class ModItems {
     public static final Item EDGE_OF_FRAILTY = registerItem("edge_of_frailty", (new net.end.forgery.item.custom.WeaknessSwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 9, -3.2F)))));
     public static final Item TERRA_BLADE = registerItem("terra_blade", (new net.minecraft.item.SwordItem(ModToolMaterials.FORGERY_UPGRADED, (new Item.Settings()).rarity(Rarity.RARE).attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FORGERY_UPGRADED, 80, -1.8F)))));
     // Tridents
-    public static final Item ECHO_TRIDENT = registerItem("echo_trident", (new EchotridentItem(new Item.Settings().rarity(Rarity.EPIC).maxDamage(300).attributeModifiers(TridentItem.createAttributeModifiers()).component(DataComponentTypes.TOOL, TridentItem.createToolComponent()))));
-    public static final Item COPPER_TRIDENT = registerItem("copper_trident", (new TridentItem(new Item.Settings().rarity(Rarity.EPIC).maxDamage(300).attributeModifiers(TridentItem.createAttributeModifiers()).component(DataComponentTypes.TOOL, TridentItem.createToolComponent()))));
+    public static final Item ECHO_TRIDENT = registerItem("echo_trident", (new EchotridentItem(new Item.Settings().rarity(Rarity.EPIC).maxDamage(450).attributeModifiers(TridentItem.createAttributeModifiers()).component(DataComponentTypes.TOOL, TridentItem.createToolComponent()))));
+    public static final Item COPPER_TRIDENT = registerItem("copper_trident", (new LightningtridentItem(new Item.Settings().rarity(Rarity.EPIC).maxDamage(400).attributeModifiers(TridentItem.createAttributeModifiers()).component(DataComponentTypes.TOOL, TridentItem.createToolComponent()))));
     // Shields
     public static final Item NETHERITE_SHIELD = registerItem("netherite_shield", (new net.minecraft.item.ShieldItem (new Item.Settings().rarity(Rarity.UNCOMMON))));
     public static final Item GOLD_SHIELD = registerItem("goldshield", (new net.end.forgery.item.custom.KnockbackShieldItem (new Item.Settings().rarity(Rarity.UNCOMMON))));
